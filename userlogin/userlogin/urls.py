@@ -1,4 +1,4 @@
-"""resume URL Configuration
+"""userlogin URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 
-from .views import GauravPage 
-from .views import Gaurav
+from .views import firstform ,login_page
+
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
-    url(r'^Gaurav-resume',GauravPage),
-    url(r'^Gaurav',Gaurav),
+    url(r'^forms',firstform),
+    url(r'^login',login_page),
+    # url(r'^form',djangoforms),
+   
 
   
     # path('admin/', admin.site.urls),
